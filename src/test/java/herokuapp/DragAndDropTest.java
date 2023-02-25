@@ -38,6 +38,7 @@ public class DragAndDropTest {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         actions().moveToElement($(byText("B"))).release().build().perform();
         $("#column-b").shouldHave(text("A"));
+
         sleep(4000);
     }
 
